@@ -1,0 +1,233 @@
+Sun Jul 11 13:51:10 CEST 2021
+
+====
+Test help info output by short option
+
+====
+Test help info output by long option
+
+====
+Test version output by short option
+
+====
+Test version output by long option
+
+====
+Test no argument
+    Expecting error message
+
+fftGen: No number of points specified.
+Usage: fftGen [option...]
+Options:
+Mandatory arguments to long options are mandatory for short options too.
+ -n, --points NUMBER   Number of points, must be a power of 2.
+ -i, --inverse         Generate code for inverse FFT.
+ -r, --real-in-opt     Optimize for real only input.
+ -o, --real-out-opt    Optimize for real only output.
+ -m, --symm-in-opt     Optimize for symmetry at input sequence.
+ -s, --symm-out-opt    Optimize for symmetry at output sequence.
+ -l, --license         Write a GPL 3 note at the beginning of the code.
+ -v, --verbose         Increase verbosity level.
+                       Verbose output is directed to stderr.
+ -V, --version         Print version and exit.
+ -h, --help            Print this info.
+Note that it is required to specify the number of data points by option -n
+or --points.
+Result is written to stdout
+
+====
+Test invalid option
+    Expecting error message
+
+fftGen: Unknown option -y
+
+Usage: fftGen [option...]
+Options:
+Mandatory arguments to long options are mandatory for short options too.
+ -n, --points NUMBER   Number of points, must be a power of 2.
+ -i, --inverse         Generate code for inverse FFT.
+ -r, --real-in-opt     Optimize for real only input.
+ -o, --real-out-opt    Optimize for real only output.
+ -m, --symm-in-opt     Optimize for symmetry at input sequence.
+ -s, --symm-out-opt    Optimize for symmetry at output sequence.
+ -l, --license         Write a GPL 3 note at the beginning of the code.
+ -v, --verbose         Increase verbosity level.
+                       Verbose output is directed to stderr.
+ -V, --version         Print version and exit.
+ -h, --help            Print this info.
+Note that it is required to specify the number of data points by option -n
+or --points.
+Result is written to stdout
+
+====
+Test invalid argument
+    Expecting error message
+
+fftGen: Unknown argument y
+
+Usage: fftGen [option...]
+Options:
+Mandatory arguments to long options are mandatory for short options too.
+ -n, --points NUMBER   Number of points, must be a power of 2.
+ -i, --inverse         Generate code for inverse FFT.
+ -r, --real-in-opt     Optimize for real only input.
+ -o, --real-out-opt    Optimize for real only output.
+ -m, --symm-in-opt     Optimize for symmetry at input sequence.
+ -s, --symm-out-opt    Optimize for symmetry at output sequence.
+ -l, --license         Write a GPL 3 note at the beginning of the code.
+ -v, --verbose         Increase verbosity level.
+                       Verbose output is directed to stderr.
+ -V, --version         Print version and exit.
+ -h, --help            Print this info.
+Note that it is required to specify the number of data points by option -n
+or --points.
+Result is written to stdout
+
+====
+Test verbosity
+Test option assignment by =
+Test option argument to -n is not power of 2
+    Expecting error message
+Number of points 7
+Generating code for standard (not inverse) FFT
+
+fftGen: Number of points 7 is not a power of two.
+Usage: fftGen [option...]
+Options:
+Mandatory arguments to long options are mandatory for short options too.
+ -n, --points NUMBER   Number of points, must be a power of 2.
+ -i, --inverse         Generate code for inverse FFT.
+ -r, --real-in-opt     Optimize for real only input.
+ -o, --real-out-opt    Optimize for real only output.
+ -m, --symm-in-opt     Optimize for symmetry at input sequence.
+ -s, --symm-out-opt    Optimize for symmetry at output sequence.
+ -l, --license         Write a GPL 3 note at the beginning of the code.
+ -v, --verbose         Increase verbosity level.
+                       Verbose output is directed to stderr.
+ -V, --version         Print version and exit.
+ -h, --help            Print this info.
+Note that it is required to specify the number of data points by option -n
+or --points.
+Result is written to stdout
+
+====
+Test invalid option argument
+    Expecting error message
+
+fftGen: Invalid option argument x
+
+Usage: fftGen [option...]
+Options:
+Mandatory arguments to long options are mandatory for short options too.
+ -n, --points NUMBER   Number of points, must be a power of 2.
+ -i, --inverse         Generate code for inverse FFT.
+ -r, --real-in-opt     Optimize for real only input.
+ -o, --real-out-opt    Optimize for real only output.
+ -m, --symm-in-opt     Optimize for symmetry at input sequence.
+ -s, --symm-out-opt    Optimize for symmetry at output sequence.
+ -l, --license         Write a GPL 3 note at the beginning of the code.
+ -v, --verbose         Increase verbosity level.
+                       Verbose output is directed to stderr.
+ -V, --version         Print version and exit.
+ -h, --help            Print this info.
+Note that it is required to specify the number of data points by option -n
+or --points.
+Result is written to stdout
+
+====
+Test 2-point FFT
+Test short option license output
+fftTest: Standard FFT Test
+fftTest: Inverse FFT Test
+
+====
+Test 4-point FFT
+Test long option license output
+Test verbosity regarding license
+Number of points 4
+Generating code for standard (not inverse) FFT
+Include a GPL 3 note into the code
+fftTest: Standard FFT Test
+fftTest: Inverse FFT Test
+
+====
+Test 8-point FFT
+Test no space before option argument
+fftTest: Standard FFT Test
+fftTest: Inverse FFT Test
+
+====
+Test 16-point FFT
+Test space before option argument
+Test -n and -i long option
+fftTest: Standard FFT Test
+fftTest: Inverse FFT Test
+
+====
+Test 32-point FFT
+Test = before option argument
+Test separate short options
+fftTest: Standard FFT Test
+fftTest: Inverse FFT Test
+
+====
+Test 32-point FFT
+Test option -r
+fftTest: Standard FFT Test
+fftTest: Inverse FFT Test
+
+====
+Test 64-point FFT
+Test option -s
+fftTest: Standard FFT Test
+fftTest: Inverse FFT Test
+
+====
+Test 64-point FFT
+Test options -r and -s
+Test -r and -s long option
+Test verbosity long option
+Test verbosity regarding -r and -s
+Number of points 64
+Generating code for standard (not inverse) FFT
+Optimize for real only input
+Optimize for symmetry at output
+fftTest: Standard FFT Test
+fftTest: Inverse FFT Test
+
+====
+Test 128-point FFT
+Test option -m
+fftTest: Standard FFT Test
+fftTest: Inverse FFT Test
+
+====
+Test 256-point FFT
+Test option -o
+fftTest: Standard FFT Test
+fftTest: Inverse FFT Test
+
+====
+Test 512-point FFT
+Test options -m and -o
+Test -m and -o long option
+Test verbosity regarding -m and -o
+Number of points 512
+Generating code for inverse FFT
+Optimize for real only output
+Optimize for symmetry at input
+fftTest: Standard FFT Test
+fftTest: Inverse FFT Test
+
+====
+Test 1024-point FFT
+Test options -r, -s, -m, -o
+
+fftTest: Standard FFT Test
+fftTest: Inverse FFT Test
+
+====
+Test usability for type float
+
+fftTest: Standard FFT Test
+fftTest: Inverse FFT Test

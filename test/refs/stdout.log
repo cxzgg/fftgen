@@ -1,0 +1,195 @@
+Sun Jul 11 13:51:10 CEST 2021
+
+====
+Test help info output by short option
+fftGen: Generate code to compute an FFT or IFFT
+Version: V1
+
+Usage: fftGen [option...]
+Options:
+Mandatory arguments to long options are mandatory for short options too.
+ -n, --points NUMBER   Number of points, must be a power of 2.
+ -i, --inverse         Generate code for inverse FFT.
+ -r, --real-in-opt     Optimize for real only input.
+ -o, --real-out-opt    Optimize for real only output.
+ -m, --symm-in-opt     Optimize for symmetry at input sequence.
+ -s, --symm-out-opt    Optimize for symmetry at output sequence.
+ -l, --license         Write a GPL 3 note at the beginning of the code.
+ -v, --verbose         Increase verbosity level.
+                       Verbose output is directed to stderr.
+ -V, --version         Print version and exit.
+ -h, --help            Print this info.
+Note that it is required to specify the number of data points by option -n
+or --points.
+Result is written to stdout
+
+====
+Test help info output by long option
+fftGen: Generate code to compute an FFT or IFFT
+Version: V1
+
+Usage: fftGen [option...]
+Options:
+Mandatory arguments to long options are mandatory for short options too.
+ -n, --points NUMBER   Number of points, must be a power of 2.
+ -i, --inverse         Generate code for inverse FFT.
+ -r, --real-in-opt     Optimize for real only input.
+ -o, --real-out-opt    Optimize for real only output.
+ -m, --symm-in-opt     Optimize for symmetry at input sequence.
+ -s, --symm-out-opt    Optimize for symmetry at output sequence.
+ -l, --license         Write a GPL 3 note at the beginning of the code.
+ -v, --verbose         Increase verbosity level.
+                       Verbose output is directed to stderr.
+ -V, --version         Print version and exit.
+ -h, --help            Print this info.
+Note that it is required to specify the number of data points by option -n
+or --points.
+Result is written to stdout
+
+====
+Test version output by short option
+fftGen V1
+
+====
+Test version output by long option
+fftGen V1
+
+====
+Test no argument
+
+====
+Test invalid option
+
+====
+Test invalid argument
+
+====
+Test verbosity
+Test option assignment by =
+Test option argument to -n is not power of 2
+
+====
+Test invalid option argument
+
+====
+Test 2-point FFT
+Test short option license output
+// This program is free software: you can redistribute it and/or modify it under
+// the terms of the GNU General Public License as published by the Free Software
+// Foundation; either version 3 of the license, or (at your option) any later
+// version.
+//
+// This program is distributed in the hope that it will be useful, but WITHOUT
+// ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+// FOR A PARTICULAR PURPOSE. See the GNU General Public License for more
+// details.
+//
+// You should have received a copy of the GNU General Public License along with
+// this program, see file COPYING. If not, see https://www.gnu.org/licenses/.
+
+tr = xr[1];
+ti = xi[1];
+xr[1] = xr[0] - tr;
+xi[1] = xi[0] - ti;
+xr[0] += tr;
+xi[0] += ti;
+
+====
+Test 4-point FFT
+Test long option license output
+Test verbosity regarding license
+// This program is free software: you can redistribute it and/or modify it under
+// the terms of the GNU General Public License as published by the Free Software
+// Foundation; either version 3 of the license, or (at your option) any later
+// version.
+//
+// This program is distributed in the hope that it will be useful, but WITHOUT
+// ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+// FOR A PARTICULAR PURPOSE. See the GNU General Public License for more
+// details.
+//
+// You should have received a copy of the GNU General Public License along with
+// this program, see file COPYING. If not, see https://www.gnu.org/licenses/.
+tr = xr[1];
+xr[1] = xr[2];
+xr[2] = tr;
+ti = xi[1];
+xi[1] = xi[2];
+xi[2] = ti;
+
+tr = xr[1];
+ti = xi[1];
+xr[1] = xr[0] - tr;
+xi[1] = xi[0] - ti;
+xr[0] += tr;
+xi[0] += ti;
+tr = xr[3];
+ti = xi[3];
+xr[3] = xr[2] - tr;
+xi[3] = xi[2] - ti;
+xr[2] += tr;
+xi[2] += ti;
+tr = xr[2];
+ti = xi[2];
+xr[2] = xr[0] - tr;
+xi[2] = xi[0] - ti;
+xr[0] += tr;
+xi[0] += ti;
+tr = xi[3];
+ti = - xr[3];
+xr[3] = xr[1] - tr;
+xi[3] = xi[1] - ti;
+xr[1] += tr;
+xi[1] += ti;
+
+====
+Test 8-point FFT
+Test no space before option argument
+
+====
+Test 16-point FFT
+Test space before option argument
+Test -n and -i long option
+
+====
+Test 32-point FFT
+Test = before option argument
+Test separate short options
+
+====
+Test 32-point FFT
+Test option -r
+
+====
+Test 64-point FFT
+Test option -s
+
+====
+Test 64-point FFT
+Test options -r and -s
+Test -r and -s long option
+Test verbosity long option
+Test verbosity regarding -r and -s
+
+====
+Test 128-point FFT
+Test option -m
+
+====
+Test 256-point FFT
+Test option -o
+
+====
+Test 512-point FFT
+Test options -m and -o
+Test -m and -o long option
+Test verbosity regarding -m and -o
+
+====
+Test 1024-point FFT
+Test options -r, -s, -m, -o
+
+
+====
+Test usability for type float
+

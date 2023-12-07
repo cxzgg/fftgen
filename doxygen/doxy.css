@@ -1,0 +1,292 @@
+/* Modified CSS file from doxygen 1.8.5 */
+
+body, table, div, p, dl {
+    font-family:sans-serif;
+    font: 400 14px/22px;
+}
+
+.title {
+    font-family:sans-serif;
+    font: 400 14px/28px;
+    font-size: 150%;
+    font-weight: bold;
+    margin: 10px 2px;
+}
+
+div#titlearea { visibility:hidden }
+
+#top { background-color: #F0F8FD }
+
+dt {
+    font-weight: bold;
+}
+
+pre.fragment {      /* For \verbatim...\endverbatim
+/* Removed from original doxygen.css to use \verbatim like \code: */
+/*    border: 1px solid #C4CFE5;
+    background-color: #FBFCFD;
+    padding: 4px 6px;
+    margin: 4px 8px 4px 2px;
+    overflow: auto;
+    word-wrap: break-word;
+    font-size:  9pt;
+    line-height: 125%;
+    font-family: monospace, fixed;
+    font-size: 105%;
+    */
+/* Inserted from div.fragment to use \verbatim like \code: */
+    padding: 5px;   /* Original 0 */
+    margin: 5px;    /* Original 0 */
+    background-color: #F0F8FD;
+    border: 1px solid #C4CFE5;
+
+/* Inserted from span.stringliteral to use \verbatim like \code: */
+    color: #002080;
+
+/* Inserted from div.line to use \verbatim like \code: */
+    font-family: monospace, fixed;
+    font-size: 13px;
+    min-height: 13px;
+    line-height: 1.0;
+    text-wrap: unrestricted;
+    white-space: -moz-pre-wrap; /* Moz */
+    white-space: -pre-wrap;     /* Opera 4-6 */
+    white-space: -o-pre-wrap;   /* Opera 7 */
+    white-space: pre-wrap;      /* CSS3  */
+    word-wrap: break-word;      /* IE 5.5+ */
+/*    text-indent: -53px;
+    padding-left: 53px;
+    padding-bottom: 0px;
+    margin: 0px;*/
+    -webkit-transition-property: background-color, box-shadow;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-property: background-color, box-shadow;
+    -moz-transition-duration: 0.5s;
+    -ms-transition-property: background-color, box-shadow;
+    -ms-transition-duration: 0.5s;
+    -o-transition-property: background-color, box-shadow;
+    -o-transition-duration: 0.5s;
+    transition-property: background-color, box-shadow;
+    transition-duration: 0.5s;
+}
+
+div.fragment {      /* For \code...\endcode */
+    padding: 5px;   /* Original 0 */
+    margin: 5px;    /* Original 0 */
+    background-color: #F0F8FD;
+    border: 1px solid #C4CFE5;
+}
+
+div.line {
+    font-family: monospace, fixed;
+    font-size: 13px;
+    min-height: 13px;
+    line-height: 1.0;
+    text-wrap: unrestricted;
+    white-space: -moz-pre-wrap; /* Moz */
+    white-space: -pre-wrap;     /* Opera 4-6 */
+    white-space: -o-pre-wrap;   /* Opera 7 */
+    white-space: pre-wrap;      /* CSS3  */
+    word-wrap: break-word;      /* IE 5.5+ */
+    text-indent: -53px;
+    padding-left: 53px;
+    padding-bottom: 0px;
+    margin: 0px;
+    -webkit-transition-property: background-color, box-shadow;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-property: background-color, box-shadow;
+    -moz-transition-duration: 0.5s;
+    -ms-transition-property: background-color, box-shadow;
+    -ms-transition-duration: 0.5s;
+    -o-transition-property: background-color, box-shadow;
+    -o-transition-duration: 0.5s;
+    transition-property: background-color, box-shadow;
+    transition-duration: 0.5s;
+}
+
+span.lineno {
+    padding-right: 4px;
+    text-align: right;
+    border-right: 2px solid #0F0;
+    background-color: #E8E8E8;
+    white-space: pre;
+}
+span.lineno a {
+    background-color: #D8D8D8;
+}
+
+span.lineno a:hover {
+    background-color: #C8C8C8;
+}
+
+body {
+    background-color: white;
+    color: black;
+    margin: 0;
+}
+
+div.contents {
+    margin-top: 10px;
+    margin-left: 12px;
+    margin-right: 8px;
+}
+
+div.center {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+div.center img {
+    border: 0px;
+}
+
+span.keyword {
+    color: #008000
+}
+
+span.keywordtype {
+    color: #604020
+}
+
+span.keywordflow {
+    color: #e08000
+}
+
+span.comment {
+    color: #800000
+}
+
+span.preprocessor {
+    color: #806020
+}
+
+span.stringliteral {
+    color: #002080
+}
+
+span.charliteral {
+    color: #008080
+}
+
+span.vhdldigit {
+    color: #ff00ff
+}
+
+span.vhdlchar {
+    color: #000000
+}
+
+span.vhdlkeyword {
+    color: #700070
+}
+
+span.vhdllogic {
+    color: #ff0000
+}
+
+blockquote {
+    background-color: #F7F8FB;
+    border-left: 2px solid #9CAFD4;
+    margin: 0 24px 0 4px;
+    padding: 0 12px 0 16px;
+}
+
+div.header
+{
+    background-color: #F0F8FD;
+    margin:  0px;
+    border-bottom: 1px solid #C4CFE5;
+}
+
+div.headertitle
+{
+    padding: 5px 5px 5px 10px;
+}
+
+a {
+    color: #3D578C;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a.el {
+    font-weight: bold;
+}
+
+dl
+{
+    padding: 0 0 0 10px;
+}
+
+/* dl.note, dl.warning, dl.attention, dl.pre, dl.post, dl.invariant, dl.deprecated, dl.todo, dl.test, dl.bug */
+dl.section
+{
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+dl.note
+{
+    margin-left:-7px;
+    padding-left: 3px;
+    border-left:4px solid;
+    border-color: #D0C000;
+}
+
+dl.warning, dl.attention
+{
+    margin-left:-7px;
+    padding-left: 3px;
+    border-left:4px solid;
+    border-color: #FF0000;
+}
+
+dl.pre, dl.post, dl.invariant
+{
+    margin-left:-7px;
+    padding-left: 3px;
+    border-left:4px solid;
+    border-color: #00D000;
+}
+
+dl.deprecated
+{
+    margin-left:-7px;
+    padding-left: 3px;
+    border-left:4px solid;
+    border-color: #505050;
+}
+
+dl.todo
+{
+    margin-left:-7px;
+    padding-left: 3px;
+    border-left:4px solid;
+    border-color: #00C0E0;
+}
+
+dl.test
+{
+    margin-left:-7px;
+    padding-left: 3px;
+    border-left:4px solid;
+    border-color: #3030E0;
+}
+
+dl.bug
+{
+    margin-left:-7px;
+    padding-left: 3px;
+    border-left:4px solid;
+    border-color: #C08050;
+}
+
+dl.section dd {
+    margin-bottom: 6px;
+}

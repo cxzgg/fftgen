@@ -1,0 +1,134 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>gcov2html.pl Manual</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:none" />
+</head>
+
+<body>
+
+
+
+<ul id="index">
+  <li><a href="#NAME">NAME</a></li>
+  <li><a href="#SYNOPSIS">SYNOPSIS</a></li>
+  <li><a href="#DESCRIPTION">DESCRIPTION</a>
+    <ul>
+      <li><a href="#Arguments">Arguments</a></li>
+      <li><a href="#Options">Options</a></li>
+    </ul>
+  </li>
+  <li><a href="#DIAGNOSTICS">DIAGNOSTICS</a></li>
+  <li><a href="#RETURN-VALUE">RETURN VALUE</a></li>
+  <li><a href="#BUGS">BUGS</a></li>
+  <li><a href="#SEE-ALSO">SEE ALSO</a></li>
+  <li><a href="#AUTHOR">AUTHOR</a></li>
+  <li><a href="#CHANGES">CHANGES</a></li>
+  <li><a href="#COPYING">COPYING</a></li>
+</ul>
+
+<h1 id="NAME">NAME</h1>
+
+<p><b>gcov2html.pl</b> - Convert the result of the GNU coverage testing tool to HTML format</p>
+
+<h1 id="SYNOPSIS">SYNOPSIS</h1>
+
+<p><b>gcov2html.pl</b> [<i>Option</i>]... <i>input-file</i></p>
+
+<p>Options:</p>
+
+<p>[<b>-v</b>] [<b>-version</b>] [<b>-h</b>] [<b>--help</b>]</p>
+
+<h1 id="DESCRIPTION">DESCRIPTION</h1>
+
+<p>gcov2html.pl converts the result of the GNU coverage testing tool (gcov) to HTML format. The result is written to STDOUT.</p>
+
+<h2 id="Arguments">Arguments</h2>
+
+<dl>
+
+<dt id="input-file"><i>input-file</i></dt>
+<dd>
+
+<p>Name of input file.</p>
+
+</dd>
+</dl>
+
+<h2 id="Options">Options</h2>
+
+<dl>
+
+<dt id="v"><b>-v</b></dt>
+<dd>
+
+</dd>
+<dt id="version"><b>-version</b></dt>
+<dd>
+
+<p>Print version and exit..</p>
+
+</dd>
+<dt id="h"><b>-h</b></dt>
+<dd>
+
+</dd>
+<dt id="help"><b>--help</b></dt>
+<dd>
+
+<p>Print usage information and terminate program.</p>
+
+</dd>
+</dl>
+
+<h1 id="DIAGNOSTICS">DIAGNOSTICS</h1>
+
+<p>Warnings and error messages are directed to STDERR. There may be error messages from the Perl I/O system.</p>
+
+<h1 id="RETURN-VALUE">RETURN VALUE</h1>
+
+<p>Returns zero in case of normal successful completion. In case of an error returns a value different from zero, normally the value of errno (see PERL manual pages on &quot;die&quot;).</p>
+
+<h1 id="BUGS">BUGS</h1>
+
+<p>Not yet known. If you encounter any error please report it to the author with a brief description of the circumstances.</p>
+
+<h1 id="SEE-ALSO">SEE ALSO</h1>
+
+<p>The documentation of the GNU coverage testing tool (&quot;man 1 gcov&quot; and &quot;man 1 gcc&quot;).</p>
+
+<h1 id="AUTHOR">AUTHOR</h1>
+
+<p>jost.brachert@gmx.de</p>
+
+<h1 id="CHANGES">CHANGES</h1>
+
+<pre><code>Revision 4         Date: 15-Nov-2023           Author: jost
+&#39;*&#39; at end of flag for partly executed lines considered
+Legend added
+
+Revision 3         Date: 14-Feb-2018           Author: jost
+Documentation updated
+
+Revision 2         Date: 01-Oct-2017           Author: jost
+&gt;, &lt;, &amp; will now be replaced by &amp;gt;, &amp;lt;, &amp;amp;.
+
+Revision 1         Date: 14-Apr-2012           Author: jost
+Initial Revision</code></pre>
+
+<h1 id="COPYING">COPYING</h1>
+
+<p>gcov2html.pl is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the license, or (at your option) any later version.</p>
+
+<p>gcov2html.pl is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
+
+<p>You should have received a copy of the GNU General Public License along with this program, see file COPYING. If not, see <a href="https://www.gnu.org/licenses/">https://www.gnu.org/licenses/</a>.</p>
+
+
+</body>
+
+</html>
+
+
