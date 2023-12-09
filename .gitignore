@@ -1,0 +1,11 @@
+dev/
+*~
+doxygen.log
+test/fftGen
+test/fftGen.gcno
+test/fftGen.gcda
+test/fftTest
+test/fft.c
+test/ffti.c
+test/stdout.log
+test/stderr.log

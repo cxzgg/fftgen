@@ -95,10 +95,6 @@ dist: all clean
 	    "../$(project)-$(version).tar.gz" -C .. "$(project)-$(version)"
 	rm "../$(project)-$(version)"
 
-# Verify the xml structure of the intermediate DocBook xml documentation file
-verify: $(DocBookOut)/$(project).dbxml
-	xmllint --noout --nonet --xinclude --postvalid --noent $(DocBookOut)/$(project).dbxml
-
 $(project)\
 $(HtmlOut)/index.html \
 test/$(project).gcda \
@@ -120,7 +116,7 @@ distclean:
 help:
 	@echo "Type 'make $(project)' to compile the program"
 	@echo "Type 'make html' to get the html user manual"
-	@echo "Type 'make all' compile the program and get the html user manual"
+	@echo "Type 'make all' to compile the program and get the html user manual"
 	@echo "Type 'make dist version=X.Y' to create the tar ball for distribution"
 	@echo "Type 'make check' to run a test"
 	@echo "Type 'make clean' to delete unnecessary temporary files"
